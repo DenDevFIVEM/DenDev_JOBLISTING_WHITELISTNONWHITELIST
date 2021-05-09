@@ -1,0 +1,100 @@
+<style>
+
+	.app {
+		display: none;
+		background-color: #ffffff;
+		border: 1.5px solid #141414;
+		border-radius: 15px;
+
+		position:absolute;
+		left:0; right:0;
+		top:0; bottom:0;
+		margin: auto;
+	
+		width: 70%;
+		height: 700px;
+		overflow: hidden;
+	
+	}
+	
+	#screen {
+	
+		position:absolute;
+		left:0; right:0;
+		top:11; bottom:0;
+		margin: auto;
+	
+		width: 90%;
+		height: 700px;
+		overflow:auto;
+	}
+	
+	#banner {
+		background-image: url('img/header.png');
+		background-color: rgb(255, 0, 0);
+		height: 132px;
+	}
+	
+	body {
+		
+		height: 100%;
+	}
+	
+	textarea {
+		
+		width: 100%;
+		
+	}
+	
+	.editor {
+		
+		width: 100%;
+		
+	}
+	
+	
+</style>
+	
+<head>
+	<script src="nui://game/ui/jquery.js" type="text/javascript"></script>
+	<script src="scripts.js" type="text/javascript"></script>
+	<script src="debounce.min.js" type="text/javascript"></script>
+	<link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="styles.css" type="text/css">
+</head>
+
+<body>
+	<div class = "app">						
+		<div class = "w3-w" id = "screen">
+			<center>
+				<br>
+				<p class="bold-text">Benvenuto nel Centro Impiego</center>
+			<br>
+			<div class = "editor w3-container w3-white">
+				<div class "radiolife content">
+					<b>Lavori:</b><br>
+
+					<input id = "police" type="radio" name="type" value="police" checked> LSPD <br>
+					<input id = "ambulance" type="radio" name="type" value="ambulance" checked> EMS <br>
+
+					<br>
+				</div>
+				
+				<b>Numero telefono:</b>
+				<textarea class = "phone w3-white" rows="1" placeholder="499-######"></textarea>
+				<br><br>
+				
+				<b>Licenze:</b>
+				<textarea class = "licenses w3-white" rows="1" placeholder="Scrivi per favore quali licenze possiedi?"></textarea>
+				<br><br>
+				
+				<b>Esperienza professionale:</b>
+				<textarea class = "exp w3-white" rows="10" placeholder="Hai precedenti esperienze in questa professione?"></textarea>
+				<br><br>
+				
+				<button class="w3-button w3-green w3-left btnSend">ACCETTA</button>
+				<button class="w3-button2 w3-red w3-left btnClose">ANNULLA</button>
+				
+			</div>
+		</div></div>	
+</body>
